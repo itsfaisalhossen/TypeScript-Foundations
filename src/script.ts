@@ -53,7 +53,7 @@ type User = {
   badge: string[];
 };
 
-const user: User = {
+const user1: User = {
   name: "Mir",
   age: 123,
   isActive: true,
@@ -64,3 +64,19 @@ const user: User = {
 };
 
 const user2 = {};
+
+// object type, type alias and interface
+
+const user: {
+  name: string;
+  age: number;
+  isActive: boolean;
+  action: () => void;
+  badage: string[];
+} = {
+  name: "Faisal",
+  age: 23,
+  isActive: true,
+  action: () => console.log("hello"),
+  badage: ["abc", "def"],
+};
